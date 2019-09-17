@@ -42,8 +42,7 @@ law="y=";
     for i=1:entradas
         if(i==1)
             law=law+"coeficientes(1)"
-        end
-        if(i==2)
+        elseif(i==2)
             law=law+"+coeficientes("+string(i)+").*x";
         else
             law=law+"+coeficientes("+string(i)+").*x.^"+string(i-1);
