@@ -1,3 +1,10 @@
+/*Essa rotina utliza o metodo dos minimos quadrados para gerar os coeficientes das funções. Ela calcula com o método da regressão multipla e aceita tanto funções de uma unica variavel com de grau maior que 1, quanto funções de multiplas variaveis
+
+
+This routine uses the least squares method to generate the coefficients of the functions. It calculates with the multiple regression method and accepts both single-variable functions with degree greater than 1 and multi-variable functions.
+
+*/
+
 function r2 = r2_ajustado(c,c2)
 r2=1-sum((c-c2).^2)/(sum(c.^2)-1/length(c)*(sum(c)^2));
 endfunction
